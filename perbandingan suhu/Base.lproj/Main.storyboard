@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="perbandingan_suhu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free-vector-beautiful-color-of-the-background-color-vector_016526_xmbj.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vxv-px-v2N">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwX-OS-8eG">
+                                <rect key="frame" x="120" y="188.5" width="135" height="30"/>
+                                <state key="normal" title="Konversi Celcius"/>
+                                <connections>
+                                    <segue destination="NqG-Zx-b2x" kind="show" id="Lmx-kD-joD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8h-nX-1jk">
+                                <rect key="frame" x="120" y="571" width="135" height="30"/>
+                                <state key="normal" title="Konversi Newton"/>
+                                <connections>
+                                    <segue destination="PcK-3Y-gz4" kind="show" id="giL-zp-egs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX4-6J-jEC">
+                                <rect key="frame" x="120" y="375" width="135" height="30"/>
+                                <state key="normal" title="Konversi Reamur"/>
+                                <connections>
+                                    <segue destination="GBk-sE-e2k" kind="show" id="0c3-0L-nqb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br8-oY-djC">
+                                <rect key="frame" x="120" y="78.5" width="135" height="30"/>
+                                <state key="normal" title="Konversi Kelvin"/>
+                                <connections>
+                                    <segue destination="f2O-H9-3FE" kind="show" id="Wtz-3D-lKa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-eg-puQ">
+                                <rect key="frame" x="120" y="318.5" width="135" height="30"/>
+                                <state key="normal" title="Konversi Fahrenheit"/>
+                                <connections>
+                                    <segue destination="YYU-YU-KCK" kind="show" id="LZz-3o-waT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwq-Ep-3nN">
+                                <rect key="frame" x="120" y="491" width="135" height="30"/>
+                                <state key="normal" title="Konversi Rankine"/>
+                                <connections>
+                                    <segue destination="PcK-3Y-gz4" kind="popoverPresentation" popoverAnchorView="iwq-Ep-3nN" id="kH8-Sl-7eX">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vxv-px-v2N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="10N-tN-xCK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vxv-px-v2N" secondAttribute="bottom" id="2lp-Bw-e8y"/>
+                            <constraint firstItem="ul4-eg-puQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4ad-LU-wVj"/>
+                            <constraint firstItem="br8-oY-djC" firstAttribute="leading" secondItem="pwX-OS-8eG" secondAttribute="leading" id="7BY-u8-v4v"/>
+                            <constraint firstItem="wX4-6J-jEC" firstAttribute="top" secondItem="ul4-eg-puQ" secondAttribute="bottom" constant="26.5" id="9Cj-j6-YRt"/>
+                            <constraint firstItem="wX4-6J-jEC" firstAttribute="trailing" secondItem="ul4-eg-puQ" secondAttribute="trailing" id="BWr-G2-BMj"/>
+                            <constraint firstItem="pwX-OS-8eG" firstAttribute="top" secondItem="br8-oY-djC" secondAttribute="bottom" constant="80" id="FnL-fm-omD"/>
+                            <constraint firstItem="wX4-6J-jEC" firstAttribute="leading" secondItem="ul4-eg-puQ" secondAttribute="leading" id="GPz-Um-WUW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vxv-px-v2N" secondAttribute="trailing" id="Hc3-vm-CWZ"/>
+                            <constraint firstItem="vxv-px-v2N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Im9-0E-dMg"/>
+                            <constraint firstItem="h8h-nX-1jk" firstAttribute="trailing" secondItem="iwq-Ep-3nN" secondAttribute="trailing" id="OR6-Vf-QGZ"/>
+                            <constraint firstItem="vxv-px-v2N" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="PGa-bC-Suh"/>
+                            <constraint firstItem="iwq-Ep-3nN" firstAttribute="leading" secondItem="wX4-6J-jEC" secondAttribute="leading" id="Pab-eM-GQJ"/>
+                            <constraint firstItem="pwX-OS-8eG" firstAttribute="trailing" secondItem="ul4-eg-puQ" secondAttribute="trailing" id="Pdy-cV-3uY"/>
+                            <constraint firstItem="pwX-OS-8eG" firstAttribute="leading" secondItem="ul4-eg-puQ" secondAttribute="leading" id="XEA-Ro-SZP"/>
+                            <constraint firstItem="h8h-nX-1jk" firstAttribute="leading" secondItem="iwq-Ep-3nN" secondAttribute="leading" id="aFe-Os-caZ"/>
+                            <constraint firstItem="iwq-Ep-3nN" firstAttribute="trailing" secondItem="wX4-6J-jEC" secondAttribute="trailing" id="b9b-Qn-MMY"/>
+                            <constraint firstItem="h8h-nX-1jk" firstAttribute="top" secondItem="iwq-Ep-3nN" secondAttribute="bottom" constant="50" id="hB4-RL-MUW"/>
+                            <constraint firstItem="ul4-eg-puQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iAy-Gg-wXi"/>
+                            <constraint firstItem="ul4-eg-puQ" firstAttribute="top" secondItem="pwX-OS-8eG" secondAttribute="bottom" constant="100" id="oGi-Z9-yqX"/>
+                            <constraint firstItem="iwq-Ep-3nN" firstAttribute="top" secondItem="wX4-6J-jEC" secondAttribute="bottom" constant="86" id="ojz-nv-pRa"/>
+                            <constraint firstItem="br8-oY-djC" firstAttribute="trailing" secondItem="pwX-OS-8eG" secondAttribute="trailing" id="ttl-iH-41R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="SuhuC" destination="hRM-pF-SzR" id="wfh-4z-FgP"/>
+                        <outlet property="SuhuC2" destination="3vO-Pb-pkh" id="jqE-b7-d5v"/>
+                        <outlet property="SuhuK" destination="uEu-OQ-MxC" id="E26-ie-Rs2"/>
+                        <outlet property="SuhuK2" destination="Pum-OC-wVe" id="gMa-kG-Ayr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zoI-OY-Qsd">
+            <objects>
+                <viewController id="f2O-H9-3FE" customClass="ViewController" customModule="perbandingan_suhu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m1f-fu-iOF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Suhu Kelvin" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pum-OC-wVe">
+                                <rect key="frame" x="16" y="295" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suhu Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vO-Pb-pkh">
+                                <rect key="frame" x="183" y="295" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235859999999" green="0.9098039269" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GxR-LM-iX8">
+                                <rect key="frame" x="158" y="333" width="59" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Konversi"/>
+                                <connections>
+                                    <action selector="Konversi2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j7c-bL-wLF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFI-v5-5PS">
+                                <rect key="frame" x="167" y="569" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bTd-uc-26N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CHK-do-LK6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSI-4e-IJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="832.79999999999995" y="89.505247376311857"/>
+        </scene>
+        <!--Fahrenheit View Controller-->
+        <scene sceneID="fSY-XK-lqx">
+            <objects>
+                <viewController id="YYU-YU-KCK" customClass="FahrenheitViewController" customModule="perbandingan_suhu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M1U-gR-D0m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Suhu Fahrenheit" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uzt-wV-QUI">
+                                <rect key="frame" x="16" y="267" width="163" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suhu Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSP-eq-BIi">
+                                <rect key="frame" x="200" y="267" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235859999999" green="0.9098039269" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FQX-dA-Bv9">
+                                <rect key="frame" x="158" y="336" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Konversi"/>
+                                <connections>
+                                    <action selector="BtnFahfren:" destination="YYU-YU-KCK" eventType="touchUpInside" id="iym-2J-q4O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM8-6c-YTB">
+                                <rect key="frame" x="218" y="422" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="eOw-JF-wI5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7Gz-eK-9XR"/>
+                    </view>
+                    <connections>
+                        <outlet property="SuhuC" destination="WSP-eq-BIi" id="P3V-jj-aQ5"/>
+                        <outlet property="SuhuF" destination="uzt-wV-QUI" id="SZK-15-Ac0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqZ-GE-iBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="926"/>
+        </scene>
+        <!--Reamur View Controller-->
+        <scene sceneID="hew-jj-Xce">
+            <objects>
+                <viewController id="GBk-sE-e2k" customClass="ReamurViewController" customModule="perbandingan_suhu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mEg-Y2-JVr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Suhu Reamur" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6hw-KY-HvI">
+                                <rect key="frame" x="26" y="318" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LI3-Lf-Efw">
+                                <rect key="frame" x="158" y="356" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Konversi"/>
+                                <connections>
+                                    <action selector="Btnreamur:" destination="GBk-sE-e2k" eventType="touchUpInside" id="e2W-aw-MGL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWB-pm-VcR">
+                                <rect key="frame" x="170" y="540" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="r9y-Uv-6BL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suhu Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqB-RX-RDc">
+                                <rect key="frame" x="200" y="318" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235859999999" green="0.9098039269" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vq4-md-1LN"/>
+                    </view>
+                    <connections>
+                        <outlet property="SuhuC" destination="rqB-RX-RDc" id="TYx-F5-7sO"/>
+                        <outlet property="SuhuR" destination="6hw-KY-HvI" id="aZR-jI-Tb5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ouv-Hg-QCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="829"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Irs-BB-gRH">
+            <objects>
+                <viewController id="NqG-Zx-b2x" customClass="ViewController" customModule="perbandingan_suhu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cVu-r7-nud">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suhu Kelvin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEu-OQ-MxC">
+                                <rect key="frame" x="132" y="381" width="111" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235855102539" green="0.90980392694473267" blue="0.34509804844856262" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJS-Co-Y9U">
+                                <rect key="frame" x="158" y="295" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Konversi"/>
+                                <connections>
+                                    <action selector="Konversi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="spi-lz-hij"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Suhu Celsius" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRM-pF-SzR">
+                                <rect key="frame" x="120" y="183" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDL-YV-JLj">
+                                <rect key="frame" x="144" y="487" width="86" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tJs-gZ-Es5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="VKe-lr-nRN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3v8-mr-8Rj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-634.39999999999998" y="326.98650674662673"/>
+        </scene>
+        <!--Newton View Controller-->
+        <scene sceneID="VEU-1p-0oO">
+            <objects>
+                <viewController id="PcK-3Y-gz4" customClass="NewtonViewController" customModule="perbandingan_suhu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h4b-sT-Sho">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Suhu Newton" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Znb-lM-a9J">
+                                <rect key="frame" x="16" y="318" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suhu Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49C-u9-60e">
+                                <rect key="frame" x="200" y="318" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235859999999" green="0.9098039269" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-xk-xrL">
+                                <rect key="frame" x="158" y="356" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Konversi"/>
+                                <connections>
+                                    <action selector="BtNewton:" destination="PcK-3Y-gz4" eventType="touchUpInside" id="URw-AI-7ML"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEk-nM-qHV">
+                                <rect key="frame" x="207" y="555" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wzd-PR-A0C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6ZS-6q-C6z"/>
+                    </view>
+                    <connections>
+                        <outlet property="SuhuC" destination="49C-u9-60e" id="jdJ-Kl-vpJ"/>
+                        <outlet property="SuhuN" destination="Znb-lM-a9J" id="tb5-4n-KiY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JOX-gb-Ftg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="829"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vpz-ZT-tne">
+            <objects>
+                <viewController id="rXh-gK-PM3" customClass="ViewController" customModule="perbandingan_suhu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jPK-nL-HwN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Suhu Rankine" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LlL-cF-kdU">
+                                <rect key="frame" x="16" y="318" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Suhu Celsius" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XF3-yq-vv5">
+                                <rect key="frame" x="200" y="318" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90588235859999999" green="0.9098039269" blue="0.34509804840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzq-P8-4cd">
+                                <rect key="frame" x="164" y="385" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Konversi"/>
+                                <connections>
+                                    <action selector="Konversi3:" destination="rXh-gK-PM3" eventType="touchUpInside" id="ut3-KC-c4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weo-6T-BfF">
+                                <rect key="frame" x="134" y="585" width="41" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="YSJ-2J-gvn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="IfF-d5-aoW"/>
+                    </view>
+                    <connections>
+                        <outlet property="SuhuC3" destination="XF3-yq-vv5" id="XzD-KJ-Aab"/>
+                        <outlet property="SuhuR2" destination="LlL-cF-kdU" id="bXH-eW-k4V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hp6-QB-smx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1516" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="free-vector-beautiful-color-of-the-background-color-vector_016526_xmbj.jpg" width="709" height="1012"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="giL-zp-egs"/>
+        <segue reference="YSJ-2J-gvn"/>
+    </inferredMetricsTieBreakers>
+</document>
